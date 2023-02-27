@@ -1,0 +1,292 @@
+/* Global 
+-----------------------------------------------------------------------------------*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+section
+{
+    display: block;
+}
+
+body {
+    background-color: #e5e5e5;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 80%;
+}
+
+/* Inicio
+-----------------------------------------------------------------------------------*/
+
+h1{
+    font-family: 'Aclonica', sans-serif;
+    color: #1b5e1b;
+}
+
+
+/* Login / logout
+-----------------------------------------------------------------------------------*/
+.ul-top-login {
+    list-style-type: none;
+}
+
+.img-login{
+    width: 3em;
+}
+
+/* Barra bottom, botones
+-----------------------------------------------------------------------------------*/
+.nav-barra-bottom, .btn-login, .btn-logout, .btn-submit {
+    background-color: #0A3033; 
+}
+
+.nav-item:hover {
+    color: #a0e426;
+}
+
+/* Barra top menú navigation 
+-----------------------------------------------------------------------------------*/
+/* Menú hamburguesa */
+a.icon {
+    background: #0A3033;
+    border-radius: 5px;
+    color:white;
+    display: block;
+    float: left;
+    height: 2.5em; 
+    position: absolute;
+    left: 0.2em;
+    text-align: center;
+    top: 2em;
+    width: 35%;  
+    padding: 0.2em;
+}
+
+/* Barra top navigation */
+.topnav {
+    overflow: hidden; 
+    position: relative;
+    left: -1em;
+    width: 40%;
+    top: -4.9em;
+}
+
+/* links navigation */
+.topnav a {
+background-color: #0A3033;
+color: white;
+display: block;
+font-size: 1rem;
+padding: 1em 1em;
+text-decoration: none;
+}
+
+.topnav a:hover {
+background-color:#a0e426;
+color: white;
+}
+
+.topnav .active {
+background-color: #a0e426;
+color: white;
+}
+
+/* Botón scroll-up
+-----------------------------------------------------------------------------------*/
+#myBtn {
+    display: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 80px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #0A3033; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1.5rem; /* Increase font size */
+}
+
+#myBtn:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/* Containers general
+-----------------------------------------------------------------------------------*/
+.home-container, 
+.comments-container, 
+.schedule-container, 
+.forum-container, 
+.contacto-container {
+    margin-top: 1em;
+    margin-bottom: 7em;
+}
+
+.eventos-container {
+    margin-top: 1em;
+    margin-bottom: 12em;
+}
+
+/* Títulos
+-----------------------------------------------------------------------------------*/
+.titulo-matches, 
+.titulo-schedule, 
+.titulo-eventos {
+    font-family: 'Aclonica', sans-serif;
+    color: #0A3033; 
+    font-size: 1.7rem;
+}
+
+/* Cards
+-----------------------------------------------------------------------------------*/
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-header {
+    background-color: #097280;
+}
+
+.card-header h3 {
+    font-size: 2em;
+}
+
+/* Fecha y hora */
+h3 {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Equipos */
+h4 {
+    font-family: 'Aclonica', sans-serif;
+    color: #fb5607;
+    font-size: 2rem; 
+}
+
+/* Estadio */
+.card-body h5 { 
+    color: #8ac926;
+    font-weight: bold;
+}
+
+/* Comentarios
+-----------------------------------------------------------------------------------*/
+.commentBubble {
+    background-color: #fb5607;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.comment-input {
+    font-size: 1.1rem;
+    color: #0A3033;
+}
+
+.form-group {
+    width: 95%;
+    padding: 0.2em;
+}
+
+.btn-comment1, .btn-comment2 {
+    background-color: #fb5607;
+}
+
+.btn-comment1 {
+    margin-left: 0.5em;
+    margin-right: 0;
+}
+
+/* Schedule
+------------------------------------------------------------------------------------ */
+.list-group-item {
+    border: 2px double #8ac926;
+    border-radius: 10px;
+    color: #0A3033;
+}
+
+.schedule-container {
+    font-size: 1.1rem;
+}
+
+.date-span1, .team-span {
+    margin-left: 0;
+    color: #0A3033; 
+}
+
+/* Eventos
+------------------------------------------------------------------------------------ */
+.eventos {
+    border-style: outset;
+    border: 2px solid #8ac926;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.eventos h3 {
+    font-size: 1.7rem;
+    font-family: 'Aclonica', sans-serif;
+    color: #8ac926;
+}
+
+.eventos p {
+    font-size: 1.3rem;
+    margin-top: 0.7em;
+    color: #0A3033;
+}
+
+/* Contacto
+------------------------------------------------------------------------------------ */
+.texto-contacto {
+    color: #0A3033;
+}
+
+a {
+    color: #4361ee;
+}
+
+.area-contacto {
+    border-style: outset;
+    border: 1px solid #8ac926;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contacto-container {
+    font-size: 1rem;
+    font-family: 'Aclonica', sans-serif;
+}
+
+/* 
+------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 550px) {
+    /* oculto barra superior */
+    .topnav {
+    visibility: hidden; 
+    } 
+    /*oculto menú hamburguesa*/      
+    a.icon {
+    visibility: hidden;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* oculto barra bottom */
+    .nav-barra-bottom {
+        visibility: hidden;
+    }
+    /* fuente barra top */
+    .topnav #myLinks {
+        color:white;
+    }
+}

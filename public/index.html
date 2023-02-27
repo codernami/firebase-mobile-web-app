@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Northside Youth Soccer League</title>
+        
+        <!-- Fuentes -->
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Manrope:wght@600&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Iconos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+        <!-- Estilos -->
+        <link rel="stylesheet" href= "style/style1.css">
+        <!-- Icon y screen -->
+        <link rel="shortcut icon"sizes="196x196" href="img/balon.png">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    </head>
+
+<body>
+    <div id="app" class= "container">
+
+        <!-- El usuario accede a la aplicación cuando se loguea con google. Por defecto el usuario está en guest -->
+        <!-- Front que se muestra si el usuario no está logueado -->
+        <template v-if="user == 'guest'">
+            <div class= "justify-content-center text-center">
+                <img class="img-fluid py-4" src= "img/nysl_logo.png" alt= "logo Northside Youth Soccer League" height= "200" width= "200">
+                <h1>Welcome to NYSL</h1>
+                <h2 class="text-dark py-3">Please login to access</h2>
+                <button type="button" class= "btn btn-login btn-lg text-light" @click="login()">Login with Google</button>
+            </div>
+        </template>
+
+        <!-- Front si el usuario está logueado -->
+        <template v-else>
+            <header>
+            <div class="row justify-content-between d-flex">
+                <!-- menú hamburguesa para landscape-->
+                <div class="col-2">
+                    <a href="javascript:void(0);" class="icon" @click="links = !links"><i class="fa fa-bars fa-2x"></i></a>  
+                </div>
+                
+                <!-- Imagen de usuario logueado y botón logout -->
+                <div class= "col-10 d-flex justify-content-end ">
+                    <ul class="ul-top-login text-center py-2">
+                        <li><img class= "img-login rounded-circle my-2" :src="user.photoURL" alt="profile_photo"></li>
+                        <li><button type="button" class="btn btn-logout btn-sm text-light rounded" @click= "logout()">Logout</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Top Navigation Menu / landscape  -->
+            <div class="topnav">
+                <nav id="myLinks" v-if="links">
+                    <a @click="view = 'home', links=false">Home</a>
+                    <a @click="view = 'schedule', links=false">Schedule</a>
+                    <a @click="view = 'events', links=false">Events</a>
+                    <a @click="view = 'contact', links=false">Contact</a>
+                </nav>
+            </div>
+            </header>
+
+            <!-- up to top / landscape -->
+            <button onclick="topFunction()" id="myBtn"  title="Go to top"><i class='fa fa-angle-up'></i></button>
+
+            <!-- Barra de navegación bottom fija-->
+            <div class="container">
+                <div class="row">
+                    <ul class="nav nav-barra-bottom justify-content-around fixed-bottom text-light py-2 ">
+                        <li class="nav-item"><a class="nav-link" @click="view = 'home'"><i class="fa fa-home fa-3x"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" @click="view = 'schedule'"><i class="fa fa-calendar fa-3x"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" @click="view = 'events'"><i class="fa fa-users fa-3x"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" @click="view = 'contact'"><i class="fa fa-paper-plane fa-3x"></i></a></li>
+                    </ul>
+                </div>
+            </div>    
+
+            <component :is="view" :user="user"></component>
+        </template>            
+    </div> <!-- cierra container -->
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+apiKey: "AIzaSyBCVLN8qB1QIyi_foYHgbOZVl5RYU4aK2g",
+authDomain: "nysl-20.firebaseapp.com",
+databaseURL: "https://nysl-20.firebaseio.com",
+projectId: "nysl-20",
+storageBucket: "nysl-20.appspot.com",
+messagingSenderId: "466841962649",
+appId: "1:466841962649:web:ad3b4bec32cb079d5d1008"
+};
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
