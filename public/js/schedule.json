@@ -191,6 +191,74 @@
                 "location_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5854973846817!2d-87.66511458506214!3d41.92326857056621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1565108441763!5m2!1ses-419!2sar"
              }
           }
+       },
+        "3":{
+          "3":{
+             "match1":{
+                "id":"20",
+                "date":"3/03",
+                "time":"9:30 AM",
+                "team1":"U1",
+                "team2":"U4",
+                "location":"AJ Katzenmaier",
+                "location_address":"24 W. Walton St., Chicago, IL  60610 ",
+                "location_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654060426147!2d-87.63123908506291!3d41.90029637200474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1565108330066!5m2!1ses-419!2sar"
+             },
+             "match2":{
+                "id":"21",
+                "date":"3/03",
+                "time":"1:00 PM",
+                "team1":"U3",
+                "team2":"U2",
+                "location":"Greenbay",
+                "location_address":"1734 N. Orleans St., Chicago, IL  60614",
+                "location_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.025698674538!2d-87.64002798506249!3d41.913806271158904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1565108384061!5m2!1ses-419!2sar"
+             }
+          },
+          "9":{
+             "match1":{
+                "id":"22",
+                "date":"3/09",
+                "time":"9:30 AM",
+                "team1":"U5",
+                "team2":"U6",
+                "location":"Howard A Yeager",
+                "location_address":"2245 N. Southport Ave., Chicago, IL  60614",
+                "location_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5854973846817!2d-87.66511458506214!3d41.92326857056621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1565108441763!5m2!1ses-419!2sar"
+             },
+             "match2":{
+                "id":"23",
+                "date":"3/09",
+                "time":"1:00 PM",
+                "team1":"U6",
+                "team2":"U1",
+                "location":"Marjorie P Hart",
+                "location_address":"2625 N. Orchard St., Chicago, IL  60614",
+                "location_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2917289530846!2d-87.64808628506191!3d41.929582270170776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1565108509123!5m2!1ses-419!2sar"
+             }
+          },
+          "15":{
+             "match1":{
+                "id":"24",
+                "date":"3/15",
+                "time":"9:30 AM",
+                "team1":"U2",
+                "team2":"U4",
+                "location":"North",
+                "location_address":"1409 N. Ogden Ave., Chicago, IL 60610",
+                "location_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.337614159603!2d-87.6483769850627!3d41.90710047157871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af0e6ccc3%3A0x26c81c1d557667da!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1565108566910!5m2!1ses-419!2sar"
+             },
+             "match2":{
+                "id":"25",
+                "date":"3/15",
+                "time":"1:00 PM",
+                "team1":"U3",
+                "team2":"U5",
+                "location":"AJ Katzenmaier",
+                "location_address":"24 W. Walton St., Chicago, IL  60610",
+                "location_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654060426147!2d-87.63123908506291!3d41.90029637200474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1565108330066!5m2!1ses-419!2sar"
+             }
+          }
        }
     }
  }

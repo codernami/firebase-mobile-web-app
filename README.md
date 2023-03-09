@@ -7,4 +7,4 @@
 + Improvement the Schedule App.
 + Add live data.
 
-👉 [Watch live demo](https://nysl-20.firebaseapp.com/)
+[Live demo](https://nysl-webapp-56447.web.app/)
